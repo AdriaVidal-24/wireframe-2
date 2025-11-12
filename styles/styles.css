@@ -68,7 +68,7 @@ section:nth-child(even) {
 	text-align: right;
 }
 
-section:first-of-type {
+article {
 	display: flex;
 	flex-direction: column;
 	gap: 0;
@@ -78,8 +78,41 @@ img {
 	width: 40%;
 	height: 100%;
 	margin-top: 5rem;
+	border-radius: 5px;
 }
 
 footer {
 	margin-top: 20vh;
+}
+
+@media (max-width: 768px) {
+	body {
+		font-size: 100%;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	header {
+		flex-direction: column;
+		gap: 2rem;
+		font-size: 0.8rem;
+	}
+
+	section {
+		flex-direction: column;
+	}
+
+	section:nth-child(even) {
+		flex-direction: column;
+		text-align: left;
+	}
+
+	section article {
+		width: 100%;
+	}
+
+	img {
+		width: 100%;
+		margin-top: 0;
+	}
 }
