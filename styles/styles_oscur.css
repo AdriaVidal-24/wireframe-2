@@ -1,7 +1,7 @@
 body {
 	font-family: Roboto Mono;
-	background-color: #e7e7e7;
-	color: #1a1a1a;
+	background-color: #595959;
+	color: #ffffff;
 	font-size: 160%;
 	margin-left: 3rem;
 	margin-right: 3rem;
@@ -42,7 +42,7 @@ header {
 	background-color: #ffffff;
 	height: 26px;
 	width: 26px;
-	left: 4px;
+	right: 4px;
 	bottom: 4px;
 }
 
