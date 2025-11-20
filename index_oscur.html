@@ -4,8 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Llenguatges estotèrics</title>
-
+	<meta name="robots" content="index, follow">
 	<link rel="stylesheet" type="text/css" href="styles/styles_oscur.css">
+
+<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="i/favicon.ico">
 
 <!-- Inserir el tipus de lletra -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +27,7 @@
     <meta name="author" content="Adrián Matas">
     <meta name="description" content="Llenguatges de programació estotèrics.">
 </head>
+
 <body>
 
 <!-- Header -->
@@ -42,43 +46,47 @@
 		<p>Un <strong>llenguatge de programació esotèric</strong> és un llenguatge de programació el qual no té com a objectiu ser emprat de forma seria, i més bé són creats com a una broma, per ser intencionadament difícils, o per comprovar les limitacions de la computació.</p>
 	</article>
 
-<!-- Secció 1: Brainfuck -->
-	<section>
-		<article>
-			<h2>Brainfuck</h2>
-			<p>És un llenguatge que té com a intenció funcionar amb la menor quantitat d'instruccions possible.<br>Un programa de Brainfuck <u>es composa de diferents cel·les</u>, totes amb un valor inicial de 0, i mitjançant les instruccions de Brainfuck podem modificar els seus valors. </p>
-			<ul>
-				<li>+→Incrementa el valor de la cel·la actual per 1.</li>
-				<li>-→Decrementa el valor de la cel·la actual per 1.</li>
-				<li>>→Passa a la següent cel·la.</li>
-				<li><→Passa a l'anterior cel·la.</li>
-				<li>[]→Bucle que es repeteix fins que el valor de la cel·la actual sigui 0.</li>
-				<li>.→Imprimeix el caràcter ASCII amb el valor de la cel·la actual.</li>
-			</ul>
-			<a href="https://sange.fi/esoteric/brainfuck/impl/interp/i.html" target="_blank">Interprete web.</a>
-		</article>
-		<img src="i/Brainfuck.png" alt="Imatge de 'Bon dia profesor' en llenguatge Brainfuck">
-	</section>
+<!-- Seccions -->
+<div>
+	<!-- Secció 1: Brainfuck -->
+		<section>
+			<article>
+				<h2>Brainfuck</h2>
+				<p>És un llenguatge que té com a intenció funcionar amb la menor quantitat d'instruccions possible.<br>Un programa de Brainfuck <u>es composa de diferents cel·les</u>, totes amb un Ovalor inicial de 0, i mitjançant les instruccions de Brainfuck podem modificar els seus valors. </p>
+				<ul>
+					<li>+→Incrementa el valor de la cel·la actual per 1.</li>
+					<li>-→Decrementa el valor de la cel·la actual per 1.</li>
+					<li>>→Passa a la següent cel·la.</li>
+					<li><→Passa a l'anterior cel·la.</li>
+					<li>[]→Bucle que es repeteix fins que el valor de la cel·la actual sigui 0.</li>
+					<li>.→Imprimeix el caràcter ASCII amb el valor de la cel·la actual.</li>
+				</ul>
+				<a href="https://sange.fi/esoteric/brainfuck/impl/interp/i.html" target="_blank">Interprete web.</a>
+			</article>
+			<img src="i/Brainfuck.png" alt="Imatge de 'Bon dia profesor' en llenguatge Brainfuck" height="152" width="502">
+		</section>
 
-<!-- Secció 2: Whitespace  -->
-	<section>
-		<article>
-			<h2>Whitespace</h2>
-			<p>És un llenguatge de programació que funciona només amb caràcters en blanc (espais, tabuladors i noves línies), mentre que tota la resta de caràcters fan de comentaris (al cas del codi d'aquí, serveixen per poder veure el codi com a tal).<br>Cada instrucció esta compost per tipus d'instrucció, operador, i els paràmetres de l'operació si es que en té.</p>
-			<a href="https://naokikp.github.io/wsi/whitespace.html" target="_blank">Interprete web.</a>
-		</article>
-		<img src="i/Whitespace.png" alt="Imatge de 'Bon dia profesor' en llenguatge Whitespace">
-	</section>
+	<!-- Secció 2: Whitespace  -->
+		<section>
+			<article>
+				<h2>Whitespace</h2>
+				<p>És un llenguatge de programació que funciona només amb caràcters en blanc (espais, tabuladors i noves línies), mentre que tota la resta de caràcters fan de comentaris (al cas del codi d'aquí, serveixen per poder veure el codi com a tal).<br>Cada instrucció esta compost per tipus d'instrucció, operador, i els paràmetres de l'operació si es que en té.</p>
+				<a href="https://naokikp.github.io/wsi/whitespace.html" target="_blank">Interprete web.</a>
+			</article>
+			<img src="i/Whitespace.png" alt="Imatge de 'Bon dia profesor' en llenguatge Whitespace" height="544" width="502">
+		</section>
 
-<!-- Secció 3: Piet  -->
-	<section>
-		<article>
-			<h2>Piet</h2>
-			<p>És un llenguatge de programació inspirat en l'artista Piet Mondrian i que pretén recrear l'estil abstracte de les seves obres. De forma similar a Brainfuck, funciona emmagatzemant informació a cel·les, amb l'única diferencia que el llenguatge Piet empra un sistema FiLo (First In Last Out) per accedir a aquestes.<br>El més notable d'aquest llenguatge és que no funciona mitjançant caràcters, sinó píxels.</p>
-			<a href="https://piet.bubbler.blue/" target="_blank">Interprete web.</a>
-		</article>
-		<img src="i/Piet.png" alt="Imatge de 'Bon dia profesor' en llenguatge Piet">
-	</section>
+	<!-- Secció 3: Piet  -->
+		<section>
+			<article>
+				<h2>Piet</h2>
+				<p>És un llenguatge de programació inspirat en l'artista Piet Mondrian i que pretén recrear l'estil abstracte de les seves obres. De forma similar a Brainfuck, funciona emmagatzemant informació a cel·les, amb l'única diferencia que el llenguatge Piet empra un sistema FiLo (First In Last Out) per accedir a aquestes.<br>El més notable d'aquest llenguatge és que no funciona mitjançant caràcters, sinó píxels.</p>
+				<a href="https://piet.bubbler.blue/" target="_blank">Interprete web.</a>
+			</article>
+			<img src="i/Piet.png" alt="Imatge de 'Bon dia profesor' en llenguatge Piet" height="400" width="496">
+		</section>	
+</div>
+
 
 <!-- Footer -->
 	<footer>

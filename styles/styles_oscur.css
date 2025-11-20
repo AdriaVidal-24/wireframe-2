@@ -7,6 +7,7 @@ body {
 	margin-right: 3rem;
 }
 
+/*Títol principal*/
 header {
 	display: flex;
 	justify-content: center;
@@ -17,6 +18,7 @@ header {
 	margin-right: 2rem;
 }
 
+/*Boto mode oscur*/
 .switch {
 	position: relative;
 	min-width: 60px;
@@ -32,7 +34,6 @@ header {
 	padding: 50%;
 	padding-top: 10%;
 	padding-bottom: 10%;
-
 }
 
 .switch span {
@@ -54,6 +55,12 @@ ul {
 	list-style-type: none;
 }
 
+/*Seccions de informació*/
+div {
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+}
+
 section {
 	display: flex;
 	gap: 3rem;
@@ -71,20 +78,20 @@ section:nth-child(even) {
 article {
 	display: flex;
 	flex-direction: column;
-	gap: 0;
 }
 
+/*Imatges*/
 img {
-	width: 40%;
-	height: 100%;
 	margin-top: 5rem;
 	border-radius: 5px;
 }
 
+/*Footer*/
 footer {
 	margin-top: 20vh;
 }
 
+/*Media queries*/
 @media (max-width: 768px) {
 	body {
 		font-size: 100%;
@@ -98,8 +105,13 @@ footer {
 		font-size: 0.8rem;
 	}
 
+	img {
+		margin-top: 0;
+	}
+
 	section {
 		flex-direction: column;
+		align-items: center;
 	}
 
 	section:nth-child(even) {
@@ -111,12 +123,14 @@ footer {
 		width: 100%;
 	}
 
-	img {
-		width: 100%;
-		margin-top: 0;
-	}
-
 	footer {
 		margin-top: 7vh;
+	}
+}
+
+@media (max-width: 530px) {
+	img {
+		width: 100%;
+		height: 50%;
 	}
 }
